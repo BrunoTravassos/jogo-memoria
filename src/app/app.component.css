@@ -1,13 +1,22 @@
 .grid {
-    display: grid;
-    grid-template-columns: repeat(5, 150px);
-    gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(5, 150px);
+  gap: 16px;
+  justify-content: center;
+}
 
-    justify-content: center;
+img {
+  width: 30%;
+  margin-top: 0.8rem;
+  margin-left: 30rem;
 }
 
 @media (max-width: 600px) {
-    .grid {
-        grid-template-columns: repeat(2, 150px);
-    }
+  .grid {
+    grid-template-columns: repeat(2, 150px);
+  }
+  img {
+    width: 60%;
+    margin-left: 1rem;
+  }
 }
